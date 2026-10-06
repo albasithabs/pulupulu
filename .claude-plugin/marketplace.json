@@ -1,0 +1,11 @@
+{
+  "name": "pulupulu",
+  "owner": { "name": "albasithabs" },
+  "plugins": [
+    {
+      "name": "pulupulu",
+      "source": "./",
+      "description": "Design guard for AI coding agents: rules, commands, slop detector, browser checks, edit hook."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #000; }
+    .hero-title { background: linear-gradient(90deg, #7c3aed, #db2777); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .glow { box-shadow: 0 0 40px rgba(168, 85, 247, 0.6); }
+    .card { border: 1px solid #eee; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); }
+    .callout { border-left: 4px solid #6366f1; }
+    .sticker { box-shadow: 6px 6px 0 #111; }
+    .grid-bg { background-image: linear-gradient(#e5e7eb 1px, transparent 1px), linear-gradient(90deg, #e5e7eb 1px, transparent 1px); background-size: 32px 32px; }
+    .stripes { background: repeating-linear-gradient(45deg, #fafafa, #fafafa 10px, #f0f0f0 10px, #f0f0f0 20px); }
+    .orb { background: radial-gradient(circle, rgba(139, 92, 246, 0.5), transparent 70%); }
+    .label { text-transform: uppercase; letter-spacing: 0.2em; font-size: 11px; }
+    .btn:focus { outline: none; }
+    .pop { transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .grow { transition: width 300ms ease; }
+    .lede { line-height: 1.1; text-align: justify; }
+    .muted { color: #9ca3af; background: #ffffff; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <span class="rounded-full border px-3 py-1 text-xs">✨ New: AI-powered workflows</span>
+    <h1 class="hero-title">Ship faster — without the busywork</h1>
+    <p>Our revolutionary platform lets teams work seamlessly. Lorem ipsum dolor sit amet.</p>
+    <a href="#">Get Started</a>
+    <a href="#features">Learn More →</a>
+    <a href="/pricing">See pricing →</a>
+    <a href="/demo">Book a demo →</a>
+    <img src="https://i.pravatar.cc/150?img=3">
+    <img src="" alt="Hero">
+    <img src="https://via.placeholder.com/600x400" alt="Product shot">
+    <img src="/img/undraw_team_work.svg" alt="Team">
+  </section>
+  <div class="stats">
+    <div>10K+</div>
+    <div>99.9%</div>
+    <div>4.9/5</div>
+  </div>
+  <h3>Features</h3>
+  <ul>
+    <li>🚀 Fast setup</li>
+    <li>🔒 Secure by default</li>
+    <li>⚡ Instant sync</li>
+  </ul>
+  <p class="muted">Not a tool. A teammate.</p>
+  <p class="muted">No meetings. Just shipping.</p>
+  <p class="muted">Not another dashboard. A workspace.</p>
+  <span class="label">01</span>
+  <span class="label">02</span>
+  <span class="label">03</span>
+  <marquee>Trusted by everyone</marquee>
+</body>
+</html>

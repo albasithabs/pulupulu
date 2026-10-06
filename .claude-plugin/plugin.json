@@ -1,0 +1,9 @@
+{
+  "name": "pulupulu",
+  "description": "Design guard for AI coding agents: rules, 25 commands, a zero-dependency slop detector, browser checks, and an edit-time hook.",
+  "version": "0.1.0",
+  "author": { "name": "albasithabs" },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/albasithabs/pulupulu",
+  "keywords": ["design", "frontend", "accessibility", "anti-slop", "lint"]
+}

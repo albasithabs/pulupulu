@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbor Tide Tables</title>
+  <!-- Layout notes — keep the table first on mobile -->
+  <style>
+    /* Palette — warm paper and ink */
+    :root {
+      --paper: #fbfaf7;
+      --ink: #1d1f22;
+      --muted: #555b63;
+      --accent: #0b5d8c;
+    }
+    body {
+      margin: 0;
+      font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-underline-offset: 0.2em; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .site-nav { border-bottom: 1px solid #e3e0d8; }
+    .note { border-left: 1px solid #d9d5cc; padding-left: 1rem; color: var(--muted); }
+    .tide-table td { font-variant-numeric: tabular-nums; }
+    .card { border: 1px solid #e3e0d8; border-radius: 8px; padding: 1rem; background: #fff; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06); }
+    .btn { background: #0b5d8c; color: #ffffff; border: 0; padding: 0.6rem 1rem; border-radius: 6px; transition: background-color 150ms ease-out; }
+    .btn:hover { background: #094a70; }
+    .spinner { animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
+  </style>
+</head>
+<body>
+  <header class="site-nav" id="top">
+    <nav aria-label="Main">
+      <a href="/catalog">Catalog</a>
+      <a href="/blog">Blog</a>
+      <a href="#tables">Tide tables</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Tide tables for Pelabuhan Ratu</h1>
+    <p>Times are local (WIB). Heights are in meters above chart datum, measured at the north pier gauge.</p>
+    <section id="tables">
+      <h2>This week</h2>
+      <table class="tide-table">
+        <thead><tr><th>Day</th><th>High</th><th>Low</th></tr></thead>
+        <tbody>
+          <tr><td>Monday</td><td>06:12</td><td>12:40</td></tr>
+          <tr><td>Tuesday</td><td>06:51</td><td>13:22</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Storm surge can add up to 0.4 m. Check the marine forecast before launching.</p>
+    </section>
+    <section>
+      <h2>Download</h2>
+      <div class="card">
+        <h3>Monthly PDF</h3>
+        <p>One page per month, printable on A4.</p>
+        <button class="btn" type="button">Download October tides</button>
+      </div>
+      <img src="/img/pier.jpg" alt="The north pier at low tide, gauge visible on the left">
+      <img src="/img/wave-divider.svg" alt="">
+      <p>Example query: <code>tides --from 2026-10-01 — 2026-10-07</code></p>
+    </section>
+  </main>
+  <footer>
+    <p><small>Data from the harbor master office.</small> <a href="#top">Back to top</a></p>
+  </footer>
+  <script>
+    // Swap units — meters or feet
+    const label = 'meters — feet';
+  </script>
+</body>
+</html>

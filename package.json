@@ -1,0 +1,43 @@
+{
+  "name": "pulupulu",
+  "version": "0.1.0",
+  "description": "Design guard for AI coding agents: rules, commands, a zero-dependency slop detector, browser checks, and an edit hook.",
+  "type": "module",
+  "bin": {
+    "pulupulu": "skills/pulupulu/scripts/pulupulu.mjs"
+  },
+  "files": [
+    "skills/",
+    "hooks/",
+    ".claude-plugin/",
+    "LICENSE",
+    "LICENSES/",
+    "NOTICE",
+    "README.md",
+    "README.en.md"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "detect": "node skills/pulupulu/scripts/pulupulu.mjs detect"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai",
+    "claude-code",
+    "skill",
+    "design",
+    "lint",
+    "accessibility",
+    "anti-slop",
+    "frontend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albasithabs/pulupulu.git"
+  },
+  "homepage": "https://github.com/albasithabs/pulupulu#readme",
+  "license": "Apache-2.0",
+  "author": "albasithabs"
+}

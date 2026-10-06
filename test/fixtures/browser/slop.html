@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slop fixture</title>
+<style>
+  body { margin: 0; font-family: Arial, sans-serif; background: #ffffff; color: #222; }
+  button, a { outline: none; }
+  a:focus, button:focus { outline: none; }
+  .nav a { font-size: 13px; color: #333; margin-right: 6px; text-decoration: none; }
+  .hero h1 {
+    font-size: 48px;
+    background-image: linear-gradient(90deg, #7c3aed, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .muted { color: #b5b5b5; font-size: 15px; }
+  .wide { width: 640px; background: #f3f3f3; padding: 8px; }
+  .band { background: #2563eb; padding: 24px; }
+  .band p { color: #6b7280; font-size: 16px; }
+  .card { border: 1px solid #ddd; border-radius: 16px; padding: 20px; background: #fff; margin: 16px; }
+  .glass { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); background: rgba(255,255,255,.4); padding: 12px; }
+  .icon-btn { width: 28px; height: 28px; border: 0; background: #eee; }
+  .tiny { font-size: 10px; }
+  .long { max-width: none; font-size: 15px; }
+  .box { width: 120px; border: 1px solid #ccc; white-space: nowrap; }
+</style>
+</head>
+<body>
+  <div class="nav"><a href="#pricing">Pricing</a><a href="#features">Features</a><a href="#about">About</a></div>
+  <section class="hero">
+    <h1>Supercharge your workflow</h1>
+    <p class="muted">Build faster with the platform teams love to use every single day.</p>
+    <button class="icon-btn"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8h12" stroke="#000"/></svg></button>
+    <button>Start</button>
+  </section>
+  <h3>Features</h3>
+  <div class="wide">A fixed-width strip that is wider than any phone screen.</div>
+  <div class="band"><p>Trusted by thousands of teams around the world.</p></div>
+  <div class="card">
+    <h3>Outer card</h3>
+    <div class="card"><p>Inner card with more content inside it.</p></div>
+  </div>
+  <div class="glass">One</div><div class="glass">Two</div><div class="glass">Three</div>
+  <img src="missing-image-that-does-not-exist.png" alt="Product shot" width="120" height="80">
+  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='40' height='40' fill='%23ccc'/%3E%3C/svg%3E" width="40" height="40">
+  <p class="tiny">Terms apply. Offer valid for new customers only while supplies last.</p>
+  <p class="long">This paragraph has no measure at all, so on a wide desktop screen every line stretches across the whole window and the eye loses its place when it returns to the start of the next line, which is exactly the problem a sensible max-width solves without any extra effort. Long lines also make it harder to judge where a sentence ends, so readers skim instead of reading, and the page feels heavier than the words on it deserve to be. A narrower column fixes all of that at once.</p>
+  <div class="box">https://example.com/a/very/long/unbroken/url/that/never/wraps</div>
+  <script>
+    console.error('boom from slop fixture');
+    window.notDefinedAnywhere();
+  </script>
+</body>
+</html>

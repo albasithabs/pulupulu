@@ -1,0 +1,31 @@
+Pulupulu
+Copyright 2026 albasithabs
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Pulupulu builds on two open-source projects. Their ideas, rule texts, and
+command playbooks were merged, rewritten, and extended here. Pulupulu's
+detector, browser checks, hook, and installer are original code.
+
+------------------------------------------------------------------------
+antislop (Anti Slop: Rules for AI Coding Agents)
+https://github.com/miqdadbadjuber/anti-slop
+Copyright (c) 2026 Miqdad Badjuber
+Licensed under the MIT License. Full text: LICENSES/antislop-MIT.txt
+
+Used: rule set R-01 to R-38 and its numbering, the three rule tiers, the
+Craftsmanship Standard, the Liveliness dials, the Delivery Gate, the
+during/after modes, and the UI, copywriting, human, mobile-layout, and
+code-comment guidance. All were edited and extended.
+
+------------------------------------------------------------------------
+Impeccable
+https://github.com/pbakaus/impeccable
+Copyright 2025 Paul Bakaus
+Licensed under the Apache License, Version 2.0. Full text: LICENSES/impeccable-Apache-2.0.txt
+
+Used: the surface modes (Persuade, Operate, Read, Experience), the craft
+floor checks, the command vocabulary and playbook structure, the PRODUCT.md
+and DESIGN.md split, and the idea of deterministic detector rules with an
+edit-time hook. All were condensed and rewritten; the detector is a new
+JavaScript implementation, not a port of Impeccable's engine.

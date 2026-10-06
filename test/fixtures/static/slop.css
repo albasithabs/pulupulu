@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.hero {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+}
+
+.title {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.06em;
+}
+
+h1 {
+  font-family: 'Fira Code', monospace;
+}
+
+.badge {
+  font-size: 0.6rem;
+}
+
+.dots {
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.panel {
+  backdrop-filter: blur(12px);
+}
+
+.nav {
+  backdrop-filter: blur(8px);
+}
+
+.modal {
+  backdrop-filter: blur(20px);
+}
+
+.neon {
+  text-shadow: 0 0 12px #22d3ee;
+  filter: drop-shadow(0 0 16px #a855f7);
+}
+
+.cta:hover img {
+  transform: scale(1.08);
+}
+
+.accordion {
+  transition: height 250ms ease-in-out, opacity 250ms;
+}
+
+.ticker {
+  animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.ease {
+  transition-timing-function: var(--ease-elastic);
+}
+
+p {
+  line-height: 1.2;
+}
